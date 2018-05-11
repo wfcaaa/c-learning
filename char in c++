@@ -1,0 +1,5 @@
+在算数表达式中不要使用char或bool，因为在一些机器中char是有符号，而在一些机器中是无符号，所以当我们要使用一个不大正数时，应当明确的它的类型
+signed char 或者unsigned char。
+
+补充： c++ 中 char类型有三种： char ，signed char ，unsigned char 但是表示形式却只有两种：带符号和不带符号，类型char会表现为上诉两种之一，具体由编译器
+决定。
