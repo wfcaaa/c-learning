@@ -1,0 +1,6 @@
+in c program ,wo often use "%" and "d" or "x" to cotrol output format .
+
+printf("%03x",0x3456);  output:3456
+printf("%03x",0x345);   output:0345
+
+当我们的实际位数大于3时 输出实际值 3456 ，当位数小于3时在前面补 输出0345
