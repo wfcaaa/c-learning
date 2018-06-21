@@ -1,0 +1,5 @@
+if we want to store string in map container,it is wrong action as follow example:
+
+map<char*,char*> m1;(false)
+
+map<string,string> m2 (right)
