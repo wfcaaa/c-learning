@@ -1,0 +1,7 @@
+question: char a[10] = ""; scanf("%s",a); printf("%s",a); when input "hello world",whether the program wrong? if no,
+what is the output of the program?
+
+the output is "hello". because the scanf function will ignore the part which after "space" character,so only "hello" will be stored
+into arr a,the lenth of "hello" is five,which is less than the lenth of arr a. 
+
+the same to "cin", cin also ignore the part which after "space"
