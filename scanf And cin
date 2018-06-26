@@ -5,3 +5,10 @@ the output is "hello". because the scanf function will ignore the part which aft
 into arr a,the lenth of "hello" is five,which is less than the lenth of arr a. 
 
 the same to "cin", cin also ignore the part which after "space"
+
+
+how to input statement with "space" character?
+
+in c++: you can ues getline ,for example: string str; getline(cin,str);
+in c:you can also use getline ,as instance: FILE *fp;char *line=NULL;size_t len = 0; ssize_t read; 
+fp = fopen("testFile","r");  if( read = getline(&line,&len,fp) != -1)
