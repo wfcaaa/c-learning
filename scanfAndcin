@@ -1,0 +1,6 @@
+scanf in c and cin in c++ will get input from stdin,and store input ,but if there is a space in input ,they will only store the 
+data before space!
+
+how to get complete data,even if data contain space?
+in c ,you can use "char * get(char *line)";
+in c++, you can use getline(cin,line)("istream& getline(istream& is,string& str)")!
