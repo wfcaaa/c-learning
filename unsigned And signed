@@ -1,6 +1,6 @@
 当表达式中同时出现有符号和无符号的变量时，假如有符号变量值是正数，这表达式正常，假如有符号变量为负数，则会有如下转化：
 
-负值得有符号数据类型的变量会先转换成无符号型数据变量再与表达式中无符号数据类型变量进行运算。
+负值的有符号数据类型的变量会先转换成无符号型数据变量再与表达式中无符号数据类型变量进行运算。
 比如：
 unsigned int a1=10;
 int a2=20;
@@ -17,3 +17,11 @@ cout<<b1+b2<<" "<<b1-b2<<" "<<b2-b1<<endl;
 这是因为负数值得有符号类型变量会先转化成有无符号型变量再进行运算。
 补充一点 先把减法运算转化成加法运算，只有加法运算的一侧的有符号型变量值依然为负值时 才会发生上面所说的转化，这也就解释为什么中间的值
 为21 而不是-4294967285！
+
+Tip：how to convert assign -1 to unsigned char ?
+first,it is neccssary to konw that how to know the value range of data?
+for example, char , the value range is : -128~127 (-2^(8-1) ~ 2(8-1) - 1)
+unsigned char ,the value range is : 0 ~ 255 (0 ~ (2^8 -1) )
+unsigned char a1 = -2; printf("%d\n",a1);
+result: 254(2^8 -2)
+
