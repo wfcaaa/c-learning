@@ -25,3 +25,5 @@ unsigned char ,the value range is : 0 ~ 255 (0 ~ (2^8 -1) )
 unsigned char a1 = -2; printf("%d\n",a1);
 result: 254(2^8 -2)
 
+Tip: 当我们试图给一个有符号类型赋值一个超出它所能表示范围的数据时，结果是未定义的，此时程序可能继续工作，也可能崩溃或者产生垃圾数据
+
