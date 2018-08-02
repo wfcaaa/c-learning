@@ -39,7 +39,7 @@ int main()
     //"==",but,type into "="
 
 
-    //case 4: const member function
+    //case 4: const member function :the const make this pointer to be a pointer that point to const element,so you can chang member data
     // the fact,actually,that is is very important is the difference of constness between two member function can be overload!!!
      class TextBlock
     {
