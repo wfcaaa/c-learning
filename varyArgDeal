@@ -1,0 +1,21 @@
+before call va_start(),va_arg(),va_end(),these three macro, we must declare a va_list ap;
+then use va_start macro to initializes ap for subsequent use by va_arg adn va_end;
+va_start(ap,format);// the format is the last argument before variable argument list(in other word the last argument before "...")!
+va_arg(ap,type); // first use return the fist argument in variable argument list, second use return the second argument in list and so on!
+
+void fun(const char* format,...)
+{
+    va_list ap,aq;
+    va_start(ap,format); // ap has ponit to the first argument in variable argument list
+    va_copy(aq,ap);
+    char * p = va_arg(ap,char *);
+    int *ptr = va_arg(ap,int *);
+    printf("%s %d\n",p,*ptr);     // result : hi world 9
+}
+
+int main()
+{
+    char p[] = "hi world";
+    int n = 9;
+    fun("%s%d",p,&n);
+}
